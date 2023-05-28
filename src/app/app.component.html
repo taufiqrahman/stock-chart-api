@@ -1,0 +1,27 @@
+<div class="main-content">
+  <div class="row">
+    <div class="col-12 col-md-7">
+      <div class="card">
+          <div class="card-body">
+              <div class="card-title">
+                  <h1><strong> <span class="font-weight-bold">IBM 
+
+                  </span> </strong>
+                      <h2>{{currentClosingPrice}} USD </h2>
+                  </h1>
+
+                  <h3 [ngClass]="{loss : gainLoss < 0, gain : gainLoss > 0}" >{{gainLoss > 0 ? '+' + gainLoss : gainLoss}}</h3>
+                  <div class="btn-group btn-group-xs" role="group" id="dateButtonGroup" aria-label="...">
+                  <button type="button" class="btn btn-default" (click)="setDataRange(10)">10 Days</button>
+                  <button type="button" class="btn btn-default" (click)="setDataRange(30)">1 Month</button>
+                  <button type="button" class="btn btn-default" (click)="setDataRange(90)">3 Months</button>
+                </div>
+              </div>
+              <div class="card-body">
+                  <canvas #lineCanvas3></canvas>
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+</div>

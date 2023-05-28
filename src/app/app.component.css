@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Mina|Open+Sans');
+
+.page-header {
+  font-family: 'Mina', sans-serif;
+  width: 600px;
+}
+#dateButtonGroup {
+  position: relative;
+  left: 100px;
+}
+
+
+h1, h2, h3, h4 {
+    display: inline;
+  }
+
+.loss {
+    color: red;
+  }
+  
+.gain {
+    color: green;
+  }
